@@ -1,5 +1,8 @@
-```    ~/Pr/F/b/D/n/o/publish/FullScreenModal.app/Contents/MacOS  ./FullScreenModal                                                                          ✔  at 17:51:14 
-2021-11-03 17:51:24.314 FullScreenModal[73243:5959277] NSWindowStyleMaskFullScreen cleared on a window outside of a full screen transition. Called from (
+# How to generate the bundle
+```dotnet msbuild -t:BundleApp -p:RuntimeIdentifier=osx-x64 -p:UseAppHost=true```
+
+# Log
+```2021-11-03 17:51:24.314 FullScreenModal[73243:5959277] NSWindowStyleMaskFullScreen cleared on a window outside of a full screen transition. Called from (
 	0   AppKit                              0x00007fff22dfb826 __25-[NSWindow setStyleMask:]_block_invoke + 125
 	1   AppKit                              0x00007fff22dfb74f NSPerformVisuallyAtomicChange + 132
 	2   AppKit                              0x00007fff22dfb65c -[NSWindow setStyleMask:] + 170
