@@ -11,7 +11,7 @@
     <CFBundleIdentifier>com.example</CFBundleIdentifier>
     <CFBundleVersion>1.0.0</CFBundleVersion>
     <CFBundlePackageType>APPL</CFBundlePackageType>
-    <CFBundleExecutable>AppName</CFBundleExecutable>
+    <CFBundleExecutable>FullScreenModal</CFBundleExecutable>
     <CFBundleShortVersionString>1.0</CFBundleShortVersionString>
     <NSPrincipalClass>NSApplication</NSPrincipalClass>
     <NSHighResolutionCapable>true</NSHighResolutionCapable>
