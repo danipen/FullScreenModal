@@ -12,6 +12,7 @@
     <CFBundleVersion>1.0.0</CFBundleVersion>
     <CFBundlePackageType>APPL</CFBundlePackageType>
     <CFBundleExecutable>FullScreenModal</CFBundleExecutable>
+    <CFBundleSignature>com.codice.fullscreenmodal</CFBundleSignature>
     <CFBundleShortVersionString>1.0</CFBundleShortVersionString>
     <NSPrincipalClass>NSApplication</NSPrincipalClass>
     <NSHighResolutionCapable>true</NSHighResolutionCapable>
