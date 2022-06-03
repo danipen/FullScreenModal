@@ -67,9 +67,10 @@ namespace FullScreenModal
         private async void Button_Click(object? sender, RoutedEventArgs e)
         {
             using (AboutWindow newWindow = AboutWindow.BuildForPlastic(this))
+            //Window newWindow = new Window();
             {
-                /*newWindow.Width = 400;
-                newWindow.Height = 400;*/
+                newWindow.Width = 400;
+                newWindow.Height = 400;
                 //newWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
                 await newWindow.ShowDialog(this);
             }

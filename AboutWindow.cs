@@ -10,6 +10,8 @@ using Avalonia.Media;
 using PlasticGui;
 using PlasticGui.WorkspaceWindow;*/
 using AppUiFramework;
+using Avalonia.Input;
+using Avalonia.Controls.Primitives;
 /*using AppUiFramework.Exceptions;
 using AppUiFramework.Theme;*/
 
@@ -33,6 +35,39 @@ namespace PlasticAvalonia
             InitializeWindow(bIsGluon);
 
             BuildComponents(bIsGluon);
+
+            System.Threading.Thread.Sleep(100);
+        }
+
+        protected override void OnTemplateApplied(TemplateAppliedEventArgs e)
+        {
+            base.OnTemplateApplied(e);
+
+            //System.Threading.Thread.Sleep(100);
+        }
+
+        protected override Size MeasureOverride(Size availableSize)
+        {
+            //System.Threading.Thread.Sleep(100);
+            return base.MeasureOverride(availableSize);
+
+
+        }
+
+        protected override Size ArrangeOverride(Size finalSize)
+        {
+            //System.Threading.Thread.Sleep(100);
+            return base.ArrangeOverride(finalSize);
+        }
+
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            base.OnKeyDown(e);
+
+            if (e.Key == Key.Escape)
+            {
+                this.Close();
+            }
         }
 
         void OkButton_Click(object sender, EventArgs e)
