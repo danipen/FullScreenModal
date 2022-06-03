@@ -18,9 +18,9 @@
     <NSHighResolutionCapable>true</NSHighResolutionCapable>
 </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.10.10" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.10.10" />
-    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.10" />
+    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0020987-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.999-cibuild0020987-beta" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.999-cibuild0020987-beta" />
     <PackageReference Include="Dotnet.Bundle" Version="*" />
    </ItemGroup>
 </Project>

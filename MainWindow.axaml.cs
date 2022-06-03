@@ -5,6 +5,7 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 using Avalonia.Threading;
+using PlasticAvalonia;
 
 namespace FullScreenModal
 {
@@ -63,13 +64,15 @@ namespace FullScreenModal
             newWindow.Show();
         }
 
-        private void Button_Click(object? sender, RoutedEventArgs e)
+        private async void Button_Click(object? sender, RoutedEventArgs e)
         {
-            Window newWindow = new Window();
-            newWindow.Width = 400;
-            newWindow.Height = 400;
-            newWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-            newWindow.ShowDialog(this);
+            using (AboutWindow newWindow = AboutWindow.BuildForPlastic(this))
+            {
+                /*newWindow.Width = 400;
+                newWindow.Height = 400;*/
+                //newWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                await newWindow.ShowDialog(this);
+            }
         }
 
         private void InitializeComponent()
